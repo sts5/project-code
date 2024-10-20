@@ -3,7 +3,7 @@ FROM python:3.7-slim-bullseye
 # Set the working directory to /main
 WORKDIR /main
 
-# Copy the current directory contents into the container at /app
+# Copy the current directory contents into the container at /main
 COPY . /main
 
 # Install any needed packages specified in requirements.txt
@@ -15,5 +15,5 @@ ENV NAME World
 # Expose the port that the application will listen on
 EXPOSE 5000
 
-# Run app.py when the container launches
+# Run main.py when the container launches
 CMD ["python", "main.py"]
