@@ -1,10 +1,10 @@
 # Use an official Python runtime as a parent image
 FROM python:3.7-slim-bullseye
-# Set the working directory to /app
-WORKDIR /app
+# Set the working directory to /main
+WORKDIR /main
 
 # Copy the current directory contents into the container at /app
-COPY . /app
+COPY . /main
 
 # Install any needed packages specified in requirements.txt
 RUN pip install --trusted-host pypi.python.org -r requirements.txt
@@ -16,4 +16,4 @@ ENV NAME World
 EXPOSE 5000
 
 # Run app.py when the container launches
-CMD ["python", "app.py"]
+CMD ["python", "main.py"]
