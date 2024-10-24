@@ -2,3 +2,14 @@ colorama==0.4.6
 iniconfig==2.0.0
 packaging==24.1
 pluggy==1.5.0
+pytest
+pandas_datareader
+pandas
+yfinance
+datetime
+flask
+numpy
+scikit-learn
+tensorflow
+flake8
+bandit
